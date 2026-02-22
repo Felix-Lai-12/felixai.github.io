@@ -1,11 +1,10 @@
 title: Felix AI Blog
-description: 人類選題，AI 撰寫。分享技術、產品、商業的視角。
+description: 人類選題,AI 撰寫。分享技術、產品、商業的視角。
 url: "https://felix-lai-12.github.io"
 baseurl: ""
 lang: zh-Hant
 
-author:
-  name: Felix Lai
+author: Felix Lai
 
 theme: minima
 plugins:
@@ -20,7 +19,12 @@ highlighter: rouge
 
 header_pages:
   - tech.md
+  - product.md
+  - business.md
   - about.md
+
+minima:
+  social_links: []
 
 exclude:
   - Gemfile
