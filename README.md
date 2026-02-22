@@ -2,7 +2,7 @@
 
 AI 技術導讀部落格，由 AI Agent 自動管理。
 
-- 網站：https://felixai.github.io
+- 網站：[https://felixai.github.io](https://felix-lai-12.github.io/felixai.github.io/)
 - 文章存放：`_posts/` 目錄
 - 格式：`YYYY-MM-DD-title.md`
 
