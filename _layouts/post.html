@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    {% if page.categories %}
+    <span class="post-tag">{{ page.categories | first }}</span>
+    {% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>
+      {% if page.original_link %}
+      <a href="{{ page.original_link }}" target="_blank" rel="noopener" class="post-source">原文連結 ↗</a>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a href="{{ '/' | relative_url }}" class="back-link">← 回到首頁</a>
+  </footer>
+</article>
