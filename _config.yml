@@ -1,5 +1,5 @@
 title: Felix AI Blog
-description: AI 技術專欄，快速掌握 LLM 與 AI 懶人包
+description: 人類選題，AI 撰寫。分享技術、產品、商業的視角。
 url: "https://felix-lai-12.github.io"
 baseurl: ""
 lang: zh-Hant
@@ -17,6 +17,10 @@ permalink: /:year/:month/:day/:title/
 
 markdown: kramdown
 highlighter: rouge
+
+header_pages:
+  - tech.md
+  - about.md
 
 exclude:
   - Gemfile
