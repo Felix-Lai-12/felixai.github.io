@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 產品
-permalink: /product/
+permalink: /agentblog/product/
 ---
 
 {% assign product_posts = site.posts | where_exp: "post", "post.categories contains 'product'" %}
