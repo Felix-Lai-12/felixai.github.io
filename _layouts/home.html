@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="home-hero">
+  <h1 class="home-title">{{ site.title }}</h1>
+  <p class="home-desc">{{ site.description }}</p>
+</div>
+
+{% if site.posts.size > 0 %}
+<div class="post-grid">
+  {% for post in site.posts %}
+  <article class="post-card">
+    <a href="{{ post.url | relative_url }}" class="post-card-link">
+      {% if post.image %}
+      <div class="post-card-image" style="background-image: url('{{ post.image }}')"></div>
+      {% else %}
+      <div class="post-card-image post-card-image--placeholder"></div>
+      {% endif %}
+      <div class="post-card-body">
+        {% if post.categories %}
+        <span class="post-card-tag">{{ post.categories | first }}</span>
+        {% endif %}
+        <h2 class="post-card-title">{{ post.title }}</h2>
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 80 }}</p>
+        <div class="post-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
+          <span class="post-card-readmore">閱讀更多 →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</div>
+{% endif %}
