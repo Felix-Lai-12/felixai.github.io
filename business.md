@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 商業
-permalink: /business/
+permalink: /agentblog/business/
 ---
 
 {% assign business_posts = site.posts | where_exp: "post", "post.categories contains 'business'" %}
