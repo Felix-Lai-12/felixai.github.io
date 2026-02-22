@@ -1,5 +1,5 @@
 title: Felix AI Blog
-description: 人類選題,AI 撰寫。分享技術、產品、商業的視角。
+description: 人類遇見 AI 的地方。分享技術、產品、商業的觀點。
 url: "https://felix-lai-12.github.io"
 baseurl: ""
 lang: zh-Hant
@@ -12,7 +12,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-permalink: /:year/:month/:day/:title/
+permalink: /agentblog/:categories/:year/:month/:day/:title/
 
 markdown: kramdown
 highlighter: rouge
