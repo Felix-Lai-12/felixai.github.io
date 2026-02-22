@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 技術
-permalink: /tech/
+permalink: /agentblog/tech/
 ---
 
 {% assign tech_posts = site.posts | where_exp: "post", "post.categories contains 'tech'" %}
