@@ -1,0 +1,25 @@
+title: Felix AI Blog
+description: AI 技術導讀，快速掌握 LLM 與 AI 應用前沿
+url: "https://felixai.github.io"
+baseurl: ""
+lang: zh-Hant
+
+author:
+  name: Felix Lai
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
